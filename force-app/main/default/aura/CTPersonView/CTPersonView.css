@@ -1,0 +1,19 @@
+.THIS.person-card{
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px wheat;
+}
+
+.THIS.Red{
+    border-top: 8px solid red;
+}
+.THIS.Yellow{
+    border-top: 8px solid yellow;
+}
+.THIS.Green{
+    border-top: 8px solid green;
+}
+.THIS.Orange{
+    border-top: 8px solid orange;
+}
+

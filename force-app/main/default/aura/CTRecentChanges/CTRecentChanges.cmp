@@ -1,0 +1,23 @@
+<aura:component controller="CTRecentHealthChangeController">
+    <aura:attribute name="searching" type="Boolean" default="false"/>
+     <aura:attribute name="data" type="List" />
+     <aura:attribute name="intialdata" type="List" />
+      <aura:attribute name="columns" type="List"/>
+      <aura:attribute name="scope" type="String" default="person"/>
+
+      <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+      
+         <div onkeyup="{!c.onKeyUpHandler}">
+           <lightning:input name="search" label="Search" aura:id="searchid" isLoading="{!v.searching}" type="search" 
+           placeholder="Search Here......"
+           ></lightning:input>
+        </div>
+        
+
+        <lightning:datatable
+                keyField="id"
+                data="{! v.data }"
+                columns="{! v.columns }"
+                hideCheckboxColumn="true"
+                onrowaction="{! c.handleRowAction }"/>
+</aura:component>	

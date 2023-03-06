@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="Event template">
+<aura:attribute type="String" name="recordId" />
+<aura:attribute type="String" name="status" />
+
+</aura:event>

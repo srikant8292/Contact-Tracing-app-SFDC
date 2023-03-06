@@ -1,0 +1,8 @@
+<aura:component controller="CTPersonTabController" implements="force:aapHostable">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="userInfos" type="Object"/>
+    <aura:attribute name="userfound" type="boolean" default="false" />
+
+
+</aura:component>	
